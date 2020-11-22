@@ -1,0 +1,22 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "frontend challenge #2",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass" : "sass styles/main.scss styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxfrecht/faq-accordion-card.git"
+  },
+  "author": "maxfrecht",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxfrecht/faq-accordion-card/issues"
+  },
+  "homepage": "https://github.com/maxfrecht/faq-accordion-card#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}
