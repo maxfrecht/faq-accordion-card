@@ -124,9 +124,9 @@ body {
   padding-bottom: 10px;
 }
 .rightSide .accordion .question-group svg {
-  margin-left: auto;
-  transition: transform 0.3s;
+  position: relative;
   top: 3px;
+  margin-left: auto;
 }
 .rightSide .accordion .question-group svg.active {
   transform: rotate(180deg);

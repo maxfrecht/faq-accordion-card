@@ -139,9 +139,9 @@ body {
             }
 
             & svg {
-                margin-left: auto;
-                transition: transform 0.3s;
+                position: relative;
                 top: 3px;
+                margin-left: auto;
 
                 &.active {
                     transform: rotate(180deg);
