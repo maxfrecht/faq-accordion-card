@@ -103,24 +103,25 @@ body {
   color: #4a4b5e;
 }
 .rightSide hr {
-  margin: 15px 0;
   width: 100%;
   border: 1px solid #e7e7e9;
 }
 .rightSide .accordion {
   position: relative;
+  border-bottom: 1px solid #e7e7e9;
+  padding: 20px 0;
 }
 .rightSide .accordion .question-group {
   display: flex;
   color: #4a4b5e;
   cursor: pointer;
-  padding-top: 10px;
 }
 .rightSide .accordion .question-group:hover {
   color: #f47c57;
 }
 .rightSide .accordion .question-group.active {
   font-weight: 700;
+  padding-bottom: 10px;
 }
 .rightSide .accordion .question-group svg {
   position: relative;
@@ -136,7 +137,6 @@ body {
   font-size: 12px;
   max-height: 0;
   overflow: hidden;
-  padding-top: 10px;
   transition: max-height 0.3s;
 }
 .rightSide .mobile {
@@ -186,6 +186,9 @@ body {
 @media screen and (max-width: 600px) {
   .rightSide .title {
     padding-top: 150px;
+  }
+  .rightSide .question-group {
+    font-size: 14px;
   }
 }
 
