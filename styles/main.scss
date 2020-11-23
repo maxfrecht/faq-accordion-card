@@ -105,6 +105,7 @@ body {
 
     margin-top: 50px;
     margin-right: 50px;
+    position: relative;
 
     & .title {
         margin-bottom: 25px;
@@ -120,7 +121,6 @@ body {
 
     & .accordion {
 
-        position: relative;
         border-bottom: 1px solid rgba($color: hsl(240, 5%, 91%), $alpha: 1.0);
         padding: 20px 0;
 
@@ -139,7 +139,6 @@ body {
             }
 
             & svg {
-                position: relative;
                 margin-left: auto;
                 transition: transform 0.3s;
                 top: 3px;
@@ -176,38 +175,39 @@ body {
         }
 
         .mobile {
-            position: relative;
             display: block;
+            height: auto;
+            width: 100%;
 
             & .topImg {
                 position: absolute;
-                width: 450px;
-                left: 45%;
-                top: -185px;
+                left: 50%;
                 transform: translate(-50%);
+                width: 400px;
+                top: -185px;
 
-                @media screen and (max-width:500px) {
-                    width: 350px;
-                    top: -145px;
+                @media screen and (max-width:520px) {
+                    width: 238px;
+                    top: -110px;
                 }
             }
 
             & .background {
                 position: absolute;
-                width: 450px;
+                width: 400px;
                 left: 50%;
                 top: -20px;
                 transform: translate(-50%);
 
-                @media screen and (max-width:500px) {
-                    width: 320px;
-                    top: -15px;
+                @media screen and (max-width:520px) {
+                    width: 238px;
+                    top: 0px;
                 }
             }
         }    
     }
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:520px) {
 
         & .title {
             padding-top: 150px;

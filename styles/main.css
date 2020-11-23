@@ -95,6 +95,7 @@ body {
 .rightSide {
   margin-top: 50px;
   margin-right: 50px;
+  position: relative;
 }
 .rightSide .title {
   margin-bottom: 25px;
@@ -107,7 +108,6 @@ body {
   border: 1px solid #e7e7e9;
 }
 .rightSide .accordion {
-  position: relative;
   border-bottom: 1px solid #e7e7e9;
   padding: 20px 0;
 }
@@ -124,7 +124,6 @@ body {
   padding-bottom: 10px;
 }
 .rightSide .accordion .question-group svg {
-  position: relative;
   margin-left: auto;
   transition: transform 0.3s;
   top: 3px;
@@ -151,39 +150,40 @@ body {
     text-align: center;
   }
   .rightSide .mobile {
-    position: relative;
     display: block;
+    height: auto;
+    width: 100%;
   }
   .rightSide .mobile .topImg {
     position: absolute;
-    width: 450px;
-    left: 45%;
-    top: -185px;
+    left: 50%;
     transform: translate(-50%);
+    width: 400px;
+    top: -185px;
   }
 }
-@media screen and (max-width: 1020px) and (max-width: 500px) {
+@media screen and (max-width: 1020px) and (max-width: 520px) {
   .rightSide .mobile .topImg {
-    width: 350px;
-    top: -145px;
+    width: 238px;
+    top: -110px;
   }
 }
 @media screen and (max-width: 1020px) {
   .rightSide .mobile .background {
     position: absolute;
-    width: 450px;
+    width: 400px;
     left: 50%;
     top: -20px;
     transform: translate(-50%);
   }
 }
-@media screen and (max-width: 1020px) and (max-width: 500px) {
+@media screen and (max-width: 1020px) and (max-width: 520px) {
   .rightSide .mobile .background {
-    width: 320px;
-    top: -15px;
+    width: 238px;
+    top: 0px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 520px) {
   .rightSide .title {
     padding-top: 150px;
   }
