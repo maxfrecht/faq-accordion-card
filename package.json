@@ -4,7 +4,7 @@
   "description": "frontend challenge #2",
   "main": "index.js",
   "scripts": {
-    "compile-sass" : "sass styles/main.scss styles/main.css"
+    "compile-sass" : "sass --watch styles/main.scss styles/main.css"
   },
   "repository": {
     "type": "git",

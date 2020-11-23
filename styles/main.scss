@@ -1,0 +1,215 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body {
+    height: 100vh;
+    background-color: rgb(175, 103, 233);
+    background: linear-gradient(
+        to bottom,
+        hsl(273, 75%, 66%),
+        hsl(240, 73%, 65%)
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    @media screen and (max-width:1055px) {
+        height: 110%;
+        padding: 20px;
+    }
+}
+
+.container {
+    height: 500px;
+    max-width: 950px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 2px rgba($color: #000000, $alpha: 0.2);
+
+    @media screen and (max-width:1050px) {
+        height: 100%;
+        margin: 25% 0 25% 0;
+        max-width: 550px;
+        padding: 0px 6% 50px 6%;
+    }
+
+    @media screen and (max-width:780px) {
+        margin: 35% 0 25% 0 ;
+    }
+
+    @media screen and (max-width:600px) {
+        margin: 45% 0 35% 0;
+    }
+
+}
+
+.leftSide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: 100px;
+    
+    & .outSider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        & .box {
+            position: absolute;
+            top: 200px;
+            left: -93px;
+            z-index: 3;
+        }
+    }
+
+    & .inSider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        overflow: hidden;
+
+        & .mainIll {
+            position: absolute;
+            bottom: 80px;
+            left: -70px;
+            z-index: 2;
+        }
+
+        & .back{
+            position: absolute;
+            width: 1000px;
+            left: -590px;
+            bottom: -150px;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+
+        display: none;
+    
+    }
+}
+
+.rightSide {
+
+    margin-top: 50px;
+    margin-right: 50px;
+
+    & .title {
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    & hr {
+        margin: 15px 0;
+        width: 100%;
+        border: 1px solid rgba($color: hsl(240, 5%, 91%), $alpha: 1.0);
+    }
+
+    & .accordion {
+
+        position: relative;
+
+        & .question-group {
+            display: flex;
+            color: hsl(237, 12%, 33%);
+            cursor: pointer;
+            padding-top: 10px;
+            
+            &:hover {
+                color: hsl(14, 88%, 65%);
+            }
+
+            &.active {
+                font-weight: 700;
+            }
+
+            & svg {
+                position: relative;
+                margin-left: auto;
+                transition: transform 0.3s;
+                top: 3px;
+
+                &.active {
+                    transform: rotate(180deg);
+                }
+            }
+
+        }
+
+        & .response > p {
+            color: hsl(240, 6%, 50%);
+            font-size: 12px;
+            max-height: 0;
+            overflow: hidden;
+            padding-top: 10px;
+            transition: max-height 0.3s;
+        }
+
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 1055px) {
+
+        margin: 0 auto;
+
+        & .title {
+            padding-top: 200px;
+            text-align: center;
+        }
+
+        .mobile {
+            position: relative;
+            display: block;
+
+            & .topImg {
+                position: absolute;
+                width: 450px;
+                left: 45%;
+                top: -185px;
+                transform: translate(-50%);
+
+                @media screen and (max-width:500px) {
+                    width: 350px;
+                    top: -145px;
+                }
+            }
+
+            & .background {
+                position: absolute;
+                width: 450px;
+                left: 50%;
+                top: -20px;
+                transform: translate(-50%);
+
+                @media screen and (max-width:500px) {
+                    width: 320px;
+                    top: -15px;
+                }
+            }
+        }    
+    }
+
+    @media screen and (max-width:600px) {
+
+        & .title {
+            padding-top: 150px;
+        }
+    }
+}
+

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #af67e9;
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+@media screen and (max-width: 1055px) {
+  body {
+    height: 110%;
+    padding: 20px;
+  }
+}
+
+.container {
+  height: 500px;
+  max-width: 950px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1050px) {
+  .container {
+    height: 100%;
+    margin: 25% 0 25% 0;
+    max-width: 550px;
+    padding: 0px 6% 50px 6%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .container {
+    margin: 35% 0 25% 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 45% 0 35% 0;
+  }
+}
+
+.leftSide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-right: 100px;
+}
+.leftSide .outSider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.leftSide .outSider .box {
+  position: absolute;
+  top: 200px;
+  left: -93px;
+  z-index: 3;
+}
+.leftSide .inSider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+}
+.leftSide .inSider .mainIll {
+  position: absolute;
+  bottom: 80px;
+  left: -70px;
+  z-index: 2;
+}
+.leftSide .inSider .back {
+  position: absolute;
+  width: 1000px;
+  left: -590px;
+  bottom: -150px;
+}
+@media screen and (max-width: 1050px) {
+  .leftSide {
+    display: none;
+  }
+}
+
+.rightSide {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.rightSide .title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.rightSide hr {
+  margin: 15px 0;
+  width: 100%;
+  border: 1px solid #e7e7e9;
+}
+.rightSide .accordion {
+  position: relative;
+}
+.rightSide .accordion .question-group {
+  display: flex;
+  color: #4a4b5e;
+  cursor: pointer;
+  padding-top: 10px;
+}
+.rightSide .accordion .question-group:hover {
+  color: #f47c57;
+}
+.rightSide .accordion .question-group.active {
+  font-weight: 700;
+}
+.rightSide .accordion .question-group svg {
+  position: relative;
+  margin-left: auto;
+  transition: transform 0.3s;
+  top: 3px;
+}
+.rightSide .accordion .question-group svg.active {
+  transform: rotate(180deg);
+}
+.rightSide .accordion .response > p {
+  color: #787887;
+  font-size: 12px;
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 10px;
+  transition: max-height 0.3s;
+}
+.rightSide .mobile {
+  display: none;
+}
+@media screen and (max-width: 1055px) {
+  .rightSide {
+    margin: 0 auto;
+  }
+  .rightSide .title {
+    padding-top: 200px;
+    text-align: center;
+  }
+  .rightSide .mobile {
+    position: relative;
+    display: block;
+  }
+  .rightSide .mobile .topImg {
+    position: absolute;
+    width: 450px;
+    left: 45%;
+    top: -185px;
+    transform: translate(-50%);
+  }
+}
+@media screen and (max-width: 1055px) and (max-width: 500px) {
+  .rightSide .mobile .topImg {
+    width: 350px;
+    top: -145px;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .rightSide .mobile .background {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    top: -20px;
+    transform: translate(-50%);
+  }
+}
+@media screen and (max-width: 1055px) and (max-width: 500px) {
+  .rightSide .mobile .background {
+    width: 320px;
+    top: -15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .rightSide .title {
+    padding-top: 150px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
